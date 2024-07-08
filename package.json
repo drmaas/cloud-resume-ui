@@ -1,0 +1,16 @@
+{
+  "name": "cloud-resume-ui",
+  "version": "1.0.0",
+  "description": "cloud resume static frontend",
+  "main": "index.js",
+  "repository": "https://github.com/drmaas/cloud-resume-ui",
+  "author": "Dan Maas",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node dev-server.mjs"
+  },
+  "devDependencies": {
+    "ws": "^8.18.0"
+  },
+  "packageManager": "yarn@4.3.1"
+}
