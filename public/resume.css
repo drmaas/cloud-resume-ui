@@ -77,3 +77,12 @@ ul {
 p, li {
     margin: 0 0 10px;
 }
+
+.counter-container {
+    font-size: larger;
+}
+
+.counter {
+    font-weight: bold;
+    background-color: lightgreen;
+}

@@ -58,7 +58,7 @@
                     <li>Cassandra</li>
                     <li>MongoDB</li>
                     <li>OAuth, OIDC</li>
-                </ul>            
+                </ul>
             </section>
             <section id="education">
                 <h2>Education</h2>
@@ -67,7 +67,7 @@
                 <p>GPA: 3.9</p>
                 <h3>Bachelor of Science, Computer Engineering and Computure Science</h3>
                 <p>University of Wisconsin, 1999 - 2004</p>
-                <p>GPA: 3.5</p>                
+                <p>GPA: 3.5</p>
             </section>
             <section id="work">
                 <h2>Work History</h2>
@@ -91,14 +91,14 @@
                     <li>Designed platform and guest-facing omnichannel ecommerce apis for stores and web</li>
                     <li>Designed cart and checkout microservices</li>
                     <li>Led scrum team meetings and design reviews</li>
-                </ul>     
+                </ul>
                 <h3>Lead Engineer</h3>
                 <p>Target, 2015 - 2017</p>
                 <ul>
                     <li>Built microservices for inventory availability</li>
                     <li>Started goalert.me project and defined initial design</li>
                     <li>Contributed code to Spinnaker project</li>
-                </ul>                             
+                </ul>
             </section>
             <section id="licenses">
                 <h2>Licenses and Certifications</h2>
@@ -117,8 +117,21 @@
                     <li>Yoga</li>
                 </ul>
             </section>
+            <footer>
+                <p class="counter-container">You are visitor number <span class="counter"></span> on this site. Nice work!</p>
+            </footer>
         </main>
     </div>
+    <script type="module">
+        
+        // TODO use api to increment counter
+        let counter = 0;
+        counter++;
+
+        const counterComponent = document.querySelector(".counter");
+        counterComponent.innerHTML = counter;
+        console.log(counter);
+    </script>
 </body>
 
 </html>
