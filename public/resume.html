@@ -118,19 +118,34 @@
                 </ul>
             </section>
             <footer>
-                <p class="counter-container">You are visitor number <span class="counter"></span> on this site. Nice work!</p>
+                <p class="counter-container">You are visitor number <span class="counter"></span> on this site. Nice
+                    work!</p>
             </footer>
         </main>
     </div>
     <script type="module">
-        
-        // TODO use api to increment counter
-        let counter = 0;
-        counter++;
-
+        // counter display
         const counterComponent = document.querySelector(".counter");
-        counterComponent.innerHTML = counter;
-        console.log(counter);
+
+        // api
+        const url = 'https://resume.drmaas.me/api/increment';
+
+        // create request
+        const request = new Request(url, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({}),
+        });
+
+        // make request and update counter
+        fetch(request)
+            .then(r => r.json())
+            .then((r) => {
+                counterComponent.innerHTML = r.counter;
+            });
     </script>
 </body>
 
